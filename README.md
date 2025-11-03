@@ -109,25 +109,6 @@ Bu projede bana yol gösteren, fikirleriyle katkı sağlayan **Murat Yücedağ**
 >
 > Sitemden Örnek Ekran Görüntüleri 
 
-<img width="1916" height="945" alt="Ekran görüntüsü 2025-11-03 114139" src="https://github.com/user-attachments/assets/0459467e-e78c-4c29-a8d9-64b1e11598d9" />
-<img width="1904" height="942" alt="Ekran görüntüsü 2025-11-03 114127" src="https://github.com/user-attachments/assets/66685547-d36e-4c30-b691-40a6f5221e0f" />
-<img width="1903" height="945" alt="Ekran görüntüsü 2025-11-03 114115" src="https://github.com/user-attachments/assets/4df2e121-4550-405a-8869-aa2f343f360c" />
-<img width="1902" height="942" alt="Ekran görüntüsü 2025-11-03 114104" src="https://github.com/user-attachments/assets/76897ab6-5dbc-41a2-b448-36810268b48e" />
-<img width="1904" height="943" alt="Ekran görüntüsü 2025-11-03 114048" src="https://github.com/user-attachments/assets/cc58ccc5-20ac-4bfd-9b0d-d9308fee8382" />
-<img width="1903" height="943" alt="Ekran görüntüsü 2025-11-03 113852" src="https://github.com/user-attachments/assets/534f03c5-451d-4581-847f-148f0691daf5" />
-<img width="1903" height="945" alt="Ekran görüntüsü 2025-11-03 113830" src="https://github.com/user-attachments/assets/f42078b8-916a-4278-89c9-7b91052d1fbc" />
-<img width="1901" height="941" alt="Ekran görüntüsü 2025-11-03 113810" src="https://github.com/user-attachments/assets/69725ed9-2275-411f-95a3-4176adf4ab49" />
-<img width="1901" height="940" alt="Ekran görüntüsü 2025-11-03 113757" src="https://github.com/user-attachments/assets/f43b3fc1-0526-417d-abdf-521315101d48" />
-<img width="1903" height="944" alt="Ekran görüntüsü 2025-11-03 113735" src="https://github.com/user-attachments/assets/0b1be129-cca0-409e-8ac2-b41b369b28d6" />
-<img width="1903" height="945" alt="Ekran görüntüsü 2025-11-03 113719" src="https://github.com/user-attachments/assets/b5087499-3d39-490d-b28c-1895cf93d0d6" />
-<img width="1899" height="941" alt="Ekran görüntüsü 2025-11-03 113654" src="https://github.com/user-attachments/assets/9736448b-6ad0-42c9-9bdc-00dba637ae5a" />
-<img width="1902" height="940" alt="Ekran görüntüsü 2025-11-03 113639" src="https://github.com/user-attachments/assets/3419dddf-4f72-47ce-b049-8cedb56a73ff" />
-<img width="1906" height="943" alt="Ekran görüntüsü 2025-11-03 113612" src="https://github.com/user-attachments/assets/116444af-2018-4043-af1e-026d92b8b704" />
-<img width="1903" height="943" alt="Ekran görüntüsü 2025-11-03 113532" src="https://github.com/user-attachments/assets/02679425-4ac4-435f-a74d-fe32bdc6fcdb" />
-<img width="1903" height="943" alt="Ekran görüntüsü 2025-11-03 113517" src="https://github.com/user-attachments/assets/ac60217d-088c-4d45-9e9a-9418f4faba6a" />
-<img width="1920" height="1032" alt="Ekran görüntüsü 2025-11-03 105155" src="https://github.com/user-attachments/assets/4096fc4a-3f78-4684-b89e-52a887cf0fdf" />
-<img width="1918" height="942" alt="Ekran görüntüsü 2025-11-03 114222" src="https://github.com/user-attachments/assets/4d66224e-9ddd-4dbf-97bb-45b87157ea45" />
-<img width="1903" height="942" alt="Ekran görüntüsü 2025-11-03 114210" src="https://github.com/user-attachments/assets/df385c2e-a433-46fe-9f4a-67824299397e" />
-<img width="1916" height="944" alt="Ekran görüntüsü 2025-11-03 114159" src="https://github.com/user-attachments/assets/b0c1d1d6-0bfd-4acb-9481-580e96f905c6" />
+
 
 
