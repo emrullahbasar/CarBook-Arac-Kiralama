@@ -105,10 +105,13 @@ Projede kullanılan **CarBook vitrin teması** ve **Xacton Admin paneli** arayü
 
 Bu projede bana yol gösteren, fikirleriyle katkı sağlayan **Murat Yücedağ**’a,teşekkür ederim.
 
-> “Kod sadece çalıştığında değil, okunabilir ve sürdürülebilir olduğunda değerlidir.”
->
-> Sitemden Örnek Ekran Görüntüleri 
+> **“Kod sadece çalıştığında değil, okunabilir ve sürdürülebilir olduğunda değerlidir.”**
 
+
+**Sitemden Örnek Ekran Görüntüleri** 
+
+<img width="1903" height="943" alt="Ekran görüntüsü 2025-11-03 113517" src="https://github.com/user-attachments/assets/a645a506-336f-4bb1-b093-f224462401f7" />
+<img width="1903" height="943" alt="Ekran görüntüsü 2025-11-03 113532" src="https://github.com/user-attachments/assets/cee35009-386e-4dc0-9da8-fe550ea35ca1" />
 
 
 
