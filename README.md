@@ -108,10 +108,13 @@ Bu projede bana yol gösteren, fikirleriyle katkı sağlayan **Murat Yücedağ**
 > **“Kod sadece çalıştığında değil, okunabilir ve sürdürülebilir olduğunda değerlidir.”**
 
 
+
 **Sitemden Örnek Ekran Görüntüleri** 
-
+>Ana Sayfa ve Giriş Alanı
 <img width="1903" height="943" alt="Ekran görüntüsü 2025-11-03 113517" src="https://github.com/user-attachments/assets/a645a506-336f-4bb1-b093-f224462401f7" />
+>Kiralama Alanı
 <img width="1903" height="943" alt="Ekran görüntüsü 2025-11-03 113532" src="https://github.com/user-attachments/assets/cee35009-386e-4dc0-9da8-fe550ea35ca1" />
-
+>Öne Çıkan Araçlar
+<img width="1906" height="943" alt="Ekran görüntüsü 2025-11-03 113612" src="https://github.com/user-attachments/assets/cb4d4804-d576-4730-9234-c50ef9692154" />
 
 
