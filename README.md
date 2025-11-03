@@ -121,4 +121,45 @@ Bu projede bana yol gösteren, fikirleriyle katkı sağlayan **Murat Yücedağ**
 
 <img width="1906" height="943" alt="Ekran görüntüsü 2025-11-03 113612" src="https://github.com/user-attachments/assets/cb4d4804-d576-4730-9234-c50ef9692154" />
 
+>Mutlu Müşteriler
+
+<img width="1902" height="940" alt="Ekran görüntüsü 2025-11-03 113639" src="https://github.com/user-attachments/assets/72ee9916-074b-4ced-856d-13bbe5e4ffb3" />
+
+>Ana Sayfadaki İstatistikler
+
+<img width="1899" height="941" alt="Ekran görüntüsü 2025-11-03 113654" src="https://github.com/user-attachments/assets/4f0388a2-abd1-47a1-bc51-8056feebdf95" />
+
+> Araçların Listesi 
+
+<img width="1903" height="945" alt="Ekran görüntüsü 2025-11-03 113719" src="https://github.com/user-attachments/assets/ad24e869-ba2c-46e2-9240-21a17c0b46c5" />
+
+>Fiyatlar İle Birlikte Araç Listesi
+
+<img width="1903" height="944" alt="Ekran görüntüsü 2025-11-03 113735" src="https://github.com/user-attachments/assets/a9ef166e-4a1c-45ba-bcea-de0a50eb0e79" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
