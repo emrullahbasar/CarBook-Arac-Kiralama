@@ -1,0 +1,34 @@
+﻿using CarBook.Application.Features.Mediator.Handlers.LocationHandler;
+using CarBook.Application.Features.Mediator.Queries.StatisticsQuery;
+using CarBook.Application.Features.Mediator.Results.StatisticsResult;
+using CarBook.Application.Interfaces.CarInterfaces;
+using CarBook.Application.Interfaces.StatisticsInterfaces;
+using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CarBook.Application.Features.Mediator.Handlers.StatisticsHandler
+{
+    public class GetLocationCountQueryHandler : IRequestHandler<GetLocationCountQuery, GetLocationCountQueryResult>
+    {
+        private readonly IStatisticsRepository _repository;
+
+        public GetLocationCountQueryHandler(IStatisticsRepository repository)
+        {
+            _repository = repository;
+        }
+
+        public async Task<GetLocationCountQueryResult> Handle(GetLocationCountQuery request, CancellationToken cancellationToken)
+        {
+            var value = _repository.GetLocationCount();
+            return new GetLocationCountQueryResult
+            {
+               LocationCount= value,
+            };
+        }
+    }
+}

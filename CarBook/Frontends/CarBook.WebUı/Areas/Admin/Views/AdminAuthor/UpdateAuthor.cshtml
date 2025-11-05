@@ -1,0 +1,39 @@
+﻿@model UpdateAuthorDto
+@{
+    ViewData["Title"] = "UpdateAuthor";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card-body">
+                        <h4 class="card-title">Yazar Bilgisi Güncelleme</h4>
+                        <p class="card-subtitle mb-4">
+                            Ana sayfanın Yazar Bilgisi alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz. Tasarımda bozulma olmaması adına
+                            tutarlı veri girişleri yapınız.Aksi halde tema bütünlüğü bozulacaktır
+                        </p>
+                        <form method="post">
+                            <input type="hidden" asp-for="AuthorID" />
+                            <div class="form-group">
+                                <label for="exampleInputTitle">Başlık</label>
+                                <input type="text" class="form-control" id="exampleInputTitle" asp-for="Name" placeholder="Başlığı Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputDescription">Açıklama</label>
+                                <textarea rows="5" asp-for="Description" class="form-control" placeholder="Açıklamayı Giriniz"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputimageUrl">Fotoğraf Linki</label>
+                                <input type="text" class="form-control" id="exampleInputimageUrl" asp-for="ImageUrl" placeholder="Fotoğraf Linki Giriniz">
+                            </div>
+                            <button type="submit" class="btn btn-success waves-effect waves-light">Yazar Bilgisi Güncelle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

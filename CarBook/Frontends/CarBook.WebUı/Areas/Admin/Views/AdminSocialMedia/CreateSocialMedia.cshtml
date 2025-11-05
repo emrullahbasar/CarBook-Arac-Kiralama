@@ -1,0 +1,38 @@
+﻿@model CreateSocialMediaDto
+@{
+    ViewData["Title"] = "CreateSocialMedia";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Sosyal Medya Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Sosyal Medya Hizmet Bilgisi alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz. Tasarımda bozulma olmaması adına
+                            adına tutarlı veri girişi yapmaya özen gösteriniz .Aksi halde tema bütünlüğü bozulacaktır
+                        </p>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="exampleInputName">Sosyal Medya</label>
+                                <input type="text" class="form-control" id="exampleInputName" asp-for="Name" placeholder="Sosyal Medya Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputIcon">İkon</label>
+                                <input type="text" class="form-control" id="exampleInputIcon" asp-for="Icon" placeholder="İkon Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputUrl">Link</label>
+                                <input type="text" class="form-control" id="exampleInputUrl" asp-for="Url" placeholder="Link Giriniz">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Hizmet Bilgilerini Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

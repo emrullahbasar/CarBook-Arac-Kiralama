@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="main-content">
+
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-flex align-items-center justify-content-between">
+                        <h4 class="mb-0 font-size-18">Genel Kontrol Paneli</h4>
+                    </div>
+                </div>
+            </div>
+            @await Component.InvokeAsync("_AdminDasboardStatisticsComponentPartial")
+            <div class="row">
+                @await Component.InvokeAsync("_AdminDashboardChart1ComponentPartial")
+                @await Component.InvokeAsync("_AdminDashboardChart2ComponentPartial")
+                @await Component.InvokeAsync("_AdminDashboardChart3ComponentPartial")
+            </div>
+            <div class="row">
+                @await Component.InvokeAsync("_AdminDashboardCarPricingListComponentPartial")
+            </div>
+
+        </div>
+    </div>
+</div>
+

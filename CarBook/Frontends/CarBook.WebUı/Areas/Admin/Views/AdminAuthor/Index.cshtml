@@ -1,0 +1,81 @@
+﻿@model List<ResultAuthorDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Yazar İşlemleri Alanı</h4>
+                            <p class="card-subtitle mb-4">
+                                Yazar İşlemleri alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz. Tutarlı veri girişi yapmaya
+                                özen gösteriniz. Aksi halde tema bütünlüğü bozulacaktır
+                            </p>
+                            <div class="table-responsive">
+
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Yazar&Adı-Soyadı</th>
+                                            <th>Açıklama</th>
+                                            <th>Fotoğraf</th>
+                                            <th>Sil</th>
+                                            <th>Güncelle</th>
+                                            <th>Yazarın Blogları</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (Model != null && Model.Any())
+                                        {
+                                            @foreach (var item in Model)
+                                            {
+                                                count++;
+                                                <tr>
+                                                    <td>@count</td>
+                                                    <td><img src="@item.ImageUrl" width="50" height="50" style="margin:5px"/> @item.Name</td>
+                                                    <td>@item.Description</td>
+                                                    <td>@item.ImageUrl</td>
+                                                    <td><a href="/Admin/AdminAuthor/RemoveAuthor/@item.AuthorID" class="btn btn-outline-danger">Sil</a></td>
+                                                    <td><a href="/Admin/AdminAuthor/UpdateAuthor/@item.AuthorID" class="btn btn-outline-success">Güncelle</a></td>
+                                                    <td><a href="/Admin/AdminAuthor/UpdateAuthor/@item.AuthorID" class="btn btn-outline-success">Yazarın Blogları</a></td>
+
+
+                                                </tr>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td colspan="4" class="text-center text-muted">Lütfen Bir Yazar Girin.</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+
+                                <a href="/Admin/AdminAuthor/CreateAuthor/" class="btn btn-outline-primary">Yeni Yazar Girişi</a>
+
+                            </div>
+
+                        </div>
+                        <!-- end card-body-->
+                    </div>
+                    <!-- end card -->
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end page title -->
+
+    </div>
+</div>
+

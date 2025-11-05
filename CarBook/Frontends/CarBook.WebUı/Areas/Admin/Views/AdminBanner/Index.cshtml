@@ -1,0 +1,67 @@
+﻿@model List<ResultBannerDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<div class="main-content">
+
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Giriş Ekranı (Banner) Düzenleme</h4>
+                            <p class="card-subtitle mb-4">
+                                Ana sayfadaki banner alanını buradan düzenleyebilirsiniz. Düzenleme esnasında bilgilerin doğru girildiğinden emin olunuz 
+                                aksi takdirde sayfada düzensizlik,bozulmalar ve hatalar oluşabilmesi muhtemeldir.
+                            </p>
+                            <div class="table-responsive">
+
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Başlık</th>
+                                            <th>Açıklama</th>
+                                            <th>Güncelle</th>
+                                            <th>Sil</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (Model != null && Model.Any())
+                                        {
+                                            @foreach (var item in Model)
+                                            {
+                                               
+                                                <tr>
+                                                    
+                                                    <td>@item.Title</td>
+                                                    <td>@item.Description</td>
+
+                                                    <td><a href="/Admin/AdminBanner/RemoveBanner/@item.BannerID" class="btn btn-outline-danger">Sil</a></td>
+                                                    <td><a href="/Admin/AdminBanner/UpdateBanner/@item.BannerID" class="btn btn-outline-success">Güncelle</a></td>
+                                                    
+                                                </tr>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td colspan="4" class="text-center text-muted">Lütfen Bir Banner Girin.</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+
+                                <a href="/AdminBanner/CreateBanner/" class="btn btn-outline-primary">Yeni Banner Girişi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

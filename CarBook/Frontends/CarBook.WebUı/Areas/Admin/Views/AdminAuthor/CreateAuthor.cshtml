@@ -1,0 +1,38 @@
+﻿@model CreateAuthorDto
+@{
+    ViewData["Title"] = "CreateAuthor";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Yazar Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Ana sayfanın Yazar İşlemleri alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz.Tasarımda sorunlar
+                            oluşmaması adına tutarlı veriler giriniz .Aksi halde tema bütünlüğü bozulacaktır
+                        </p>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="exampleInputTitle">Başlık</label>
+                                <input type="text" class="form-control" id="exampleInputTitle" asp-for="Name" placeholder="Yazarı Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputDescription">Açıklama</label>
+                                <textarea rows="5" asp-for="Description" class="form-control" placeholder="Açıklamayı Giriniz"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputimageURL">Fotoğraf Linki</label>
+                                <input type="text" class="form-control" id="exampleInputimageURL" asp-for="ImageUrl" placeholder="Fotoğrafın Linki Giriniz">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Yazarı Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

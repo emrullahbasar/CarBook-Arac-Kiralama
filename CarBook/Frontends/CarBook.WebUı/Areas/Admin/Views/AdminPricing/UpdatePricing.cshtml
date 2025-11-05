@@ -1,0 +1,30 @@
+﻿@model UpdatePricingDto
+@{
+    ViewData["Title"] = "UpdatePricing";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Fiyat Bilgisi Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Ana sayfanın Fiyatlar alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz. Tutarlı veri girişi yapınız .Aksi halde tema bütünlüğü bozulacaktır
+                        </p>
+                        <form method="post">
+                            <input type="hidden" asp-for="PricingID" />
+                            <div class="form-group">
+                                <label for="exampleInputTitle">Fiyat</label>
+                                <input type="text" class="form-control" id="exampleInputTitle" asp-for="Name" placeholder="Fiyatı Giriniz">
+                            </div>          
+                            <button type="submit" class="btn btn-success waves-effect waves-light">Fiyatları Güncelle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

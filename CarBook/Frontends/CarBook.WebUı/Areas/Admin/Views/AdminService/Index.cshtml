@@ -1,0 +1,73 @@
+﻿@model List<ResultServiceDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="main-content">
+
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Hizmet Bilgi Alanı</h4>
+                            <p class="card-subtitle mb-4">
+                                Hizmet Bilgi alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz. Tutarlı veri girişi yapmaya
+                                özen gösteriniz. Aksi halde tema bütünlüğü bozulacaktır
+                            </p>
+                            <div class="table-responsive">
+
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Hizmetler</th>
+                                            <th>İcon</th>
+                                            <th>Açıklama</th>
+                                            <th>Sil</th>
+                                            <th>Güncelle</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (Model != null && Model.Any())
+                                        {
+                                            @foreach (var item in Model)
+                                            {
+                                                count++;
+                                                <tr>
+                                                    <td>@count</td>
+                                                    <td>@item.Title</td>
+                                                    <td>@item.IconUrl</td>
+                                                    <td>@item.Description</td>
+                                                    <td><a href="/Admin/AdminService/RemoveService/@item.ServiceID" class="btn btn-outline-danger">Sil</a></td>
+                                                    <td><a href="/Admin/AdminService/UpdateService/@item.ServiceID" class="btn btn-outline-success">Güncelle</a></td>
+                                                </tr>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td colspan="4" class="text-center text-muted">Lütfen Hizmet Bilgisi Girin.</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+
+                                <a href="/Admin/AdminService/CreateService/" class="btn btn-outline-primary">Yeni Hizmet Bilgisi Girişi</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

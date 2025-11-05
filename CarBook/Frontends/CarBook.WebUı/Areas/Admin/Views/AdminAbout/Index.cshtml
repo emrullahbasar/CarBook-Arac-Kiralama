@@ -1,0 +1,79 @@
+﻿@model List<ResultAboutDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="main-content">
+
+    <div class="page-content">
+        <div class="container-fluid">
+
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Ana Sayfa Hakkımızda Alanı</h4>
+                            <p class="card-subtitle mb-4">
+                                Ana sayfanın ve hakkımızda alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz. Tutarlı veri girişi yapmaya
+                                özen gösteriniz. Aksi halde tema bütünlüğü bozulacaktır
+                            </p>
+                            <div class="table-responsive">
+
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Başlık</th>
+                                            <th>Açıklama</th> 
+                                            <th>Fotoğraf</th>
+                                            <th>Sil</th>
+                                            <th>Güncelle</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (Model != null && Model.Any())
+                                        {
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>@item.title</td>
+                                                    <td>@item.description</td>
+                                                    <td>@item.imageUrl</td>
+                                                    <td><a href="/Admin/AdminAbout/RemoveAbout/@item.aboutID" class="btn btn-outline-danger">Sil</a></td>
+                                                    <td><a href="/Admin/AdminAbout/UpdateAbout/@item.aboutID" class="btn btn-outline-success">Güncelle</a></td>
+                                                    
+                                                </tr>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td colspan="4" class="text-center text-muted">Lütfen Bir Hakkımızda Girin.</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+
+                                <a href="/Admin/AdminAbout/CreateAbout/" class="btn btn-outline-primary">Yeni Hakkımızda Girişi</a>
+
+                            </div>
+
+                        </div>
+                        <!-- end card-body-->
+                    </div>
+                    <!-- end card -->
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end page title -->
+
+    </div> <!-- container-fluid -->
+</div>
+<!-- End Page-content -->
+</div>

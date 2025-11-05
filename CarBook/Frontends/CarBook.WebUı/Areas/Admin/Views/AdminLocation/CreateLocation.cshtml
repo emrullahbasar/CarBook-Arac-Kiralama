@@ -1,0 +1,30 @@
+﻿@model CreateLocationDto
+@{
+    ViewData["Title"] = "CreateLocation";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Teslim Noktaları Bilgisi Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Ana sayfanın Teslim Noktaları alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz. Tasarımda bozulma olmaması adına
+                            adına tutarlı veri girişi yapmaya özen gösteriniz .Aksi halde tema bütünlüğü bozulacaktır
+                        </p>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="exampleInputName">Teslim Noktaları</label>
+                                <input type="text" class="form-control" id="exampleInputName" asp-for="Name" placeholder="Başlığı Giriniz">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Teslim Noktaları Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

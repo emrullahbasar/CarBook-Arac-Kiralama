@@ -1,0 +1,30 @@
+﻿@model CreateCategoryDto
+@{
+    ViewData["Title"] = "CreateCategory";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni  Blog Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Ana sayfanın Blog işlemleri alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz.Tasarımda sorunlar
+                            oluşmaması adına tutarlı veriler giriniz .Aksi halde tema bütünlüğü bozulacaktır
+                        </p>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="exampleInputTitle">Yazarın Adı</label>
+                                <input type="text" class="form-control" id="exampleInputTitle" asp-for="Name" placeholder="Blogu Giriniz">
+                            </div>                           
+                            <button type="submit" class="btn btn-primary waves-effect waves-light"> Blog Kategorisini Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

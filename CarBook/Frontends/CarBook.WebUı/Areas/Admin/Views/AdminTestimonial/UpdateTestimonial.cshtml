@@ -1,0 +1,43 @@
+﻿@model UpdateTestimonialDto
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Referans Güncelleme</h4>
+                        <p class="card-subtitle mb-4">
+                            Referans Bilgisi alanında bulunan bilgileri aşağıdan düzenleyebilirsiniz. Tasarımda bozulma olmaması adına
+                            adına tutarlı veri girişi yapmaya özen gösteriniz .Aksi halde tema bütünlüğü bozulacaktır
+                        </p>
+                        <form method="post">
+                            <input type="hidden" asp-for="TestimonialID" />
+                            <div class="form-group">
+                                <label for="exampleInputName">Kişi Adı</label>
+                                <input type="text" class="form-control" id="exampleInputName" asp-for="Name" placeholder="Kişi Adı Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputTitle">Unvan</label>
+                                <input type="text" class="form-control" id="exampleInputTitle" asp-for="Title" placeholder="Unvan Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputComment">Yorum</label>
+                                <input type="text" class="form-control" id="exampleInputComment" asp-for="Comment" placeholder="Yorum Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputImageUrl">Fotoğraf Linki</label>
+                                <input type="text" class="form-control" id="exampleInputImageUrl" asp-for="ImageUrl" placeholder="Fotoğraf Linki Giriniz">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Referans Güncelle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

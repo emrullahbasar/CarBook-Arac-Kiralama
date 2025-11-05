@@ -1,0 +1,73 @@
+﻿@model List<ResultPricingDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="main-content">
+
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Fiyatlandırma alanı</h4>
+                            <p class="card-subtitle mb-4">
+                                Ürünlerin fiyat listesindeki düzenlemeleri bu sayfadan yapabilirsiniz
+                            </p>
+                            <div class="table-responsive">
+
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Fiyatlar</th>
+                                            <th>Sil</th>
+                                            <th>Güncelle</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (Model != null && Model.Any())
+                                        {
+                                            @foreach (var item in Model)
+                                            {
+                                                count++;
+                                                <tr>
+                                                    <td>@count</td>
+                                                    <td>@item.Name</td>
+                                                    <td><a href="/Admin/AdminPricing/RemovePricing/@item.PricingID" class="btn btn-outline-danger">Sil</a></td>
+                                                    <td><a href="/Admin/AdminPricing/UpdatePricing/@item.PricingID" class="btn btn-outline-success">Güncelle</a></td>
+
+                                                </tr>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td colspan="12" class="text-center text-muted">Lütfen Bir Fiyat Girin.</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+
+                                <a href="/Admin/AdminPricing/CreatePricing/" class="btn btn-outline-primary">Yeni Fiyat Girişi</a>
+
+                            </div>
+
+                        </div>
+                        <!-- end card-body-->
+                    </div>
+                    <!-- end card -->
+
+                </div>
+                <!-- end col -->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+

@@ -1,0 +1,111 @@
+﻿@model List<ResultFooterAddressDto>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            swal("“Şartlar ve Koşullar”","Sitemizi kullanarak, burada belirtilen şartlar ve koşulları kabul etmiş sayılırsınız. Hizmetlerimizde yer alan bilgilerin doğruluğu ve güncelliği için çaba gösterilse de, hatalardan veya eksikliklerden dolayı oluşabilecek zararlardan sorumluluk kabul edilmez. Kullanıcılar, siteyi yalnızca yasal ve dürüst amaçlarla kullanmayı taahhüt eder. Şirket, gerekli gördüğü durumlarda hizmetleri, içerikleri veya bu şartları önceden bildirim yapmadan değiştirme hakkını saklı tutar.");
+        });
+    });
+     $(document).ready(function(){
+        $('#btn2').click(function(){
+            swal("Gizlilik ve Çerez Politikası","Sitemiz, kullanıcı deneyimini geliştirmek ve hizmetlerimizi kişiselleştirmek amacıyla çerezleri kullanmaktadır. Çerezler, ziyaret ettiğiniz sayfalar ve tercihleriniz hakkında bilgi toplayarak size daha iyi bir hizmet sunmamıza yardımcı olur. Kişisel verileriniz, yalnızca yasal gereklilikler ve açık rızanız doğrultusunda işlenir, üçüncü kişilerle paylaşılmaz. Dilerseniz tarayıcı ayarlarınızdan çerez kullanımını kısıtlayabilir veya devre dışı bırakabilirsiniz; ancak bu durumda bazı site özellikleri sınırlı çalışabilir.");
+        });
+    });
+     $(document).ready(function(){
+        $('#btn5').click(function(){
+            swal("Süreç Nasıl İşler","Araç kiralama süreci oldukça basittir. Öncelikle, web sitemiz üzerinden istediğiniz tarih aralığında uygun aracı seçip rezervasyonunuzu oluşturursunuz. Rezervasyon onaylandıktan sonra, aracı belirlenen tarihte teslim alabilirsiniz. Teslim sırasında kimlik, ehliyet ve ödeme bilgileri kontrol edilir. Kiralama süresi boyunca araç size tahsis edilir ve sürenin sonunda araç, belirlenen noktada iade edilir. Araç kontrolü yapıldıktan sonra depozito iadesi gerçekleştirilir.");
+        });
+    });
+    $(document).ready(function(){
+        $('#btn3').click(function(){
+                swal("Sıkça Sorulan Sorular","1. Araç kiralama süresi nasıl belirlenir? Kiralama süresi, aracın teslim alınacağı ve iade edileceği tarihlere göre belirlenir. Minimum kiralama süresi genellikle 24 saattir. 2. Aracı kimler kiralayabilir? Araç kiralama için sürücünün en az 21 yaşında ve en az 2 yıllık geçerli sürücü belgesine sahip olması gerekir. 3. Kiralama bedeline neler dahildir? Kiralama ücretine genellikle standart sigorta, belirli kilometre hakkı ve vergiler dahildir. Ek hizmetler ayrıca ücretlendirilebilir. 4. Rezervasyonumu iptal edebilir miyim? Evet, rezervasyonunuzu belirlenen süre öncesinde ücretsiz olarak iptal edebilirsiniz. Süre geçtikten sonra iptal ücretleri uygulanabilir.");
+        });
+    });
+     $(document).ready(function(){
+        $('#btn4').click(function(){
+            swal("Ödeme Şekilleri","Araç kiralama işlemlerinde ödeme, kredi kartı, banka kartı veya nakit olarak yapılabilir. Online rezervasyonlarda, güvenli ödeme sistemleri üzerinden kredi kartıyla işlem yapılması önerilir. Kiralama sırasında, olası hasar veya cezalar için belirli bir teminat tutarı (depozito) karttan ön provizyon olarak alınabilir. Kiralama süresi sonunda aracın sorunsuz teslim edilmesi halinde bu tutar iade edilir. Tüm ödemeler Türk Lirası (₺) üzerinden gerçekleştirilir.");
+        });
+    });
+
+</script>
+
+
+
+
+
+
+
+
+@foreach (var item in Model)
+{
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2"><a href="#" class="logo">Car<span>book</span></a></h2>
+                        <p>@item.Description</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="https://x.com/emomakinen"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/emrullahbsar/#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Bilgi</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="/About/Index" class="py-2 d-block">Hakkımızda</a></li>
+                            <li><a href="#" id="btn1" class="py-2 d-block">Şartlar ve Koşullar</a></li>
+                            <li><a href="/Car/Index" class="py-2 d-block">En İyi Fiyat Garantisi</a></li>
+                            <li><a href="#" id="btn2" class="py-2 d-block">Gizlilik ve Çerez Politikası</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Müşteri Hizmetleri</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" id="btn3" class="py-2 d-block">Sıkça Sorulanlar</a></li>
+                            <li><a href="#" id="btn4"class="py-2 d-block">Ödeme Şekilleri</a></li>
+                            <li><a href="/CarPricing/Index" class="py-2 d-block">Kiralama Yöntemleri</a></li>
+                            <li><a href="#" id="btn5"class="py-2 d-block">Süreç Nasıl İşler</a></li>
+                            <li><a href="/Contact/Index" class="py-2 d-block">Bizimle İletişime Geçin</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Bir Sorunuz Var Mı ?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">@item.Address</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">@item.Phone</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">@item.Email</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+}
+
+@* burası yükleme ekranı *@
+@* <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+ *@

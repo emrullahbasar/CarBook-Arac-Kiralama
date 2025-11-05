@@ -1,0 +1,11 @@
+Araba sayýsý
+Lokasyon Sayýsý
+Yazar sayýsý
+Blog Sayýsý
+Marka sayýsý
+Günlük Ort Araç kiralama fiyatý
+Aylýk Ort Araç kiralama fiyatý
+Haftalýk Ort Araç kiralama fiyatý
+OtoVites Araç sayýsý
+En fazla araçlý marka
+en fazla yorum almýþ blog
